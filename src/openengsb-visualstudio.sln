@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "openengsb-maven-browser", "openengsb-maven-browser\openengsb-maven-browser.csproj", "{7C6C41A6-2EC8-498B-B3C1-8D48B616F864}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "openengsb-visualstudio-wizard", "openengsb-visualstudio-wizard\openengsb-visualstudio-wizard.csproj", "{7C6C41A6-2EC8-498B-B3C1-8D48B616F864}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "openengsb-maven-addin", "openengsb-maven-addin\openengsb-maven-addin.csproj", "{1F71332C-491A-423A-989A-9F88C3048041}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "openengsb-visualstudio-addin", "openengsb-visualstudio-addin\openengsb-visualstudio-addin.csproj", "{1F71332C-491A-423A-989A-9F88C3048041}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestConsole", "TestConsole\TestConsole.csproj", "{9970924F-1287-4B7D-9E76-3ECB5A0CB51D}"
 EndProject

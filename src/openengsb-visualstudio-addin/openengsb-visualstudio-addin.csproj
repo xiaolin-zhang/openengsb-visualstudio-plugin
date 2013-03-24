@@ -10,7 +10,7 @@
     <StartupObject>
     </StartupObject>
     <NoStandardLibraries>false</NoStandardLibraries>
-    <AssemblyName>openengsb-maven-addin</AssemblyName>
+    <AssemblyName>openengsb-visualstudio-addin</AssemblyName>
     <DeploymentDirectory>.\bin\</DeploymentDirectory>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -21,7 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <WarningLevel>4</WarningLevel>
     <IncrementalBuild>false</IncrementalBuild>
-    <DocumentationFile>openengsb-maven-addin.xml</DocumentationFile>
+    <DocumentationFile>openengsb-visualstudio-addin.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>false</DebugSymbols>
@@ -31,7 +31,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <WarningLevel>4</WarningLevel>
     <IncrementalBuild>false</IncrementalBuild>
-    <DocumentationFile>openengsb-maven-addin.xml</DocumentationFile>
+    <DocumentationFile>openengsb-visualstudio-addin.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup>
     <RootNamespace>Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Maven</RootNamespace>
@@ -116,18 +116,14 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\..\..\..\..\..\..\..\Visual Studio 2010\Addins\openengsb-maven-addin - For Testing.AddIn">
-      <Link>openengsb-maven-addin - For Testing.AddIn</Link>
-      <SubType>Designer</SubType>
-    </Content>
-    <Content Include="openengsb-maven-addin.AddIn" />
+    <Content Include="openengsb-visualstudio-addin.AddIn" />
     <None Include="openengsb.bmp" />
     <Content Include="openengsb.ico" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\openengsb-maven-browser\openengsb-maven-browser.csproj">
+    <ProjectReference Include="..\openengsb-visualstudio-wizard\openengsb-visualstudio-wizard.csproj">
       <Project>{7C6C41A6-2EC8-498B-B3C1-8D48B616F864}</Project>
-      <Name>openengsb-maven-browser</Name>
+      <Name>openengsb-visualstudio-wizard</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

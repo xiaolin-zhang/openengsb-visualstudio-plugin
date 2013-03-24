@@ -50,12 +50,6 @@
     <Reference Include="Moq">
       <HintPath>lib\Moq.dll</HintPath>
     </Reference>
-    <Reference Include="org.openengsb.domain.auditing-2.5.1-AuditingDomain">
-      <HintPath>..\..\..\..\..\..\..\..\..\Downloads\org.openengsb.domain.auditing-2.5.1-AuditingDomain.dll</HintPath>
-    </Reference>
-    <Reference Include="org.openengsb.domain.auditing-2.5.1-AuditingDomainEvents">
-      <HintPath>..\..\..\..\..\..\..\..\..\Downloads\org.openengsb.domain.auditing-2.5.1-AuditingDomainEvents.dll</HintPath>
-    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
@@ -77,9 +71,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\openengsb-maven-browser\openengsb-maven-browser.csproj">
+    <ProjectReference Include="..\openengsb-visualstudio-wizard\openengsb-visualstudio-wizard.csproj">
       <Project>{7C6C41A6-2EC8-498B-B3C1-8D48B616F864}</Project>
-      <Name>openengsb-maven-browser</Name>
+      <Name>openengsb-visualstudio-wizard</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

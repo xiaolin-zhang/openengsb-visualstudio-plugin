@@ -9,7 +9,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Assistants</RootNamespace>
-    <AssemblyName>openengsb-maven-browser</AssemblyName>
+    <AssemblyName>openengsb-visualstudio-wizard</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>

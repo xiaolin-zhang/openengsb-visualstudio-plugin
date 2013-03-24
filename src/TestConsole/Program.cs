@@ -12,7 +12,6 @@ using Moq;
 using EnvDTE;
 using EnvDTE80;
 using VSLangProj;
-using Org.OpenEngSB.
 namespace TestConsole
 {
     class Program
@@ -26,7 +25,6 @@ namespace TestConsole
             project.Setup(proj => proj.UniqueName).Returns("OpenEngSbMockProject");
             vsproject.Setup(proj => proj.Project).Returns(project.Object);
             MavenWizard wizard = new MavenWizard(env.Object, vsproject.Object);
-            IAuditingDomainSoapBinding 
             wizard.DoConfiguration();
             //wizard.DoSteps();
             wizard.DownloadOpenEngSb();

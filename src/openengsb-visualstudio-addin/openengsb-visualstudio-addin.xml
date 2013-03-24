@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <doc>
     <assembly>
-        <name>openengsb-maven-addin</name>
+        <name>openengsb-visualstudio-addin</name>
     </assembly>
     <members>
         <member name="T:Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Maven.Connect">
