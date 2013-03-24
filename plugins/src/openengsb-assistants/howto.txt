@@ -1,0 +1,11 @@
+=== Using OpenEngSb Maven Visual Studio Plugin ===
+Preconditions:
+-) WSDL descriptions of the interface, e.g. stored in a maven or local repository/folder
+-) naming convention according to maven guidelines
+
+1) Download sources
+2) Build sources with Visual Studios
+3) Copy the DLLs from build ouput to an arbitrary destination.
+4) Copy openengsb-maven-plugin.AddIn to the "Visual Studio [YEAR]" folder in your home directory
+5) Change the path of the <assembly> tag in the .AddIn file to point to the built DLL
+6) Start Visual Studio.
