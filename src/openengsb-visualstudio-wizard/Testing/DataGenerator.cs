@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Assistants.Common;
+using Org.OpenEngSb.VisualStudio.Plugins.Wizards.Common;
 
-namespace Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Assistants.Testing
+namespace Org.OpenEngSb.VisualStudio.Plugins.Wizards.Testing
 {
     class DataGenerator
     {

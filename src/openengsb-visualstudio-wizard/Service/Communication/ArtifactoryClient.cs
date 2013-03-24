@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Assistants.Common;
+using Org.OpenEngSb.VisualStudio.Plugins.Wizards.Common;
 using System.Net;
 using System.Web.Script.Serialization;
-using Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Assistants.Service.Communication.JSON;
+using Org.OpenEngSb.VisualStudio.Plugins.Wizards.Service.Communication.JSON;
 
-namespace Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Assistants.Service.Communication
+namespace Org.OpenEngSb.VisualStudio.Plugins.Wizards.Service.Communication
 {
     public class ArtifactoryClient: IRepositoryClient
     {

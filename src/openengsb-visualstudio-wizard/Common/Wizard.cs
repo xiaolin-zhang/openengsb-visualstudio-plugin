@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.IO;
 using System.Diagnostics;
-using Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Assistants.Service;
+using Org.OpenEngSb.VisualStudio.Plugins.Wizards.Service;
 using EnvDTE80;
 using EnvDTE100;
 using VSLangProj;
 using System.Xml.Serialization;
 
-namespace Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Assistants.Common
+namespace Org.OpenEngSb.VisualStudio.Plugins.Wizards.Common
 {
     public class Wizard
     {

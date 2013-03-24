@@ -6,7 +6,7 @@ using ICSharpCode.SharpZipLib.Core;
 using ICSharpCode.SharpZipLib.Zip;
 using System.IO;
 
-namespace Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Assistants.Service
+namespace Org.OpenEngSb.VisualStudio.Plugins.Wizards.Service
 {
     public class ArchiveService
     {

@@ -1,10 +1,10 @@
 ﻿using System.Windows;
-using Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Assistants.Common;
+using Org.OpenEngSb.VisualStudio.Plugins.Wizards.Common;
 using System.Collections.Generic;
 using System.Windows.Controls;
-using Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Assistants.Service;
+using Org.OpenEngSb.VisualStudio.Plugins.Wizards.Service;
 
-namespace Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Assistants.UI
+namespace Org.OpenEngSb.VisualStudio.Plugins.Wizards.UI
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

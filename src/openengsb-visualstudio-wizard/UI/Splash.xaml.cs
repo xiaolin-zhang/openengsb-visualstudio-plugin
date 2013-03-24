@@ -14,7 +14,7 @@ using System.Windows.Shapes;
 using System.Reflection;
 using System.IO;
 
-namespace Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Assistants.UI
+namespace Org.OpenEngSb.VisualStudio.Plugins.Wizards.UI
 {
     /// <summary>
     /// Interaction logic for Splash.xaml

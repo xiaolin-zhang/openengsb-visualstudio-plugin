@@ -12,9 +12,9 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Collections.ObjectModel;
 
-using Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Assistants.Common;
+using Org.OpenEngSb.VisualStudio.Plugins.Wizards.Common;
 
-namespace Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Assistants.UI
+namespace Org.OpenEngSb.VisualStudio.Plugins.Wizards.UI
 {
     /// <summary>
     /// Interaction logic for ConfigurationWindow.xaml

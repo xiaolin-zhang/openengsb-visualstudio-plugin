@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Assistants.Service.Communication;
-using Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Assistants;
-using Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Assistants.UI;
+using Org.OpenEngSb.VisualStudio.Plugins.Wizards.Service.Communication;
+using Org.OpenEngSb.VisualStudio.Plugins.Wizards.Assistants;
+using Org.OpenEngSb.VisualStudio.Plugins.Wizards.UI;
 using System.Reflection;
-using Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Assistants.Service;
-using Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Assistants.Common;
+using Org.OpenEngSb.VisualStudio.Plugins.Wizards.Service;
+using Org.OpenEngSb.VisualStudio.Plugins.Wizards.Common;
 using Moq;
 using EnvDTE;
 using EnvDTE80;

@@ -4,8 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
-using Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Assistants.Common;
-using Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Assistants.UI;
+using Org.OpenEngSb.VisualStudio.Plugins.Wizards.Common;
+using Org.OpenEngSb.VisualStudio.Plugins.Wizards.UI;
 using EnvDTE80;
 using VSLangProj;
 using System.Reflection;
@@ -13,7 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Threading;
 
-namespace Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Assistants
+namespace Org.OpenEngSb.VisualStudio.Plugins.Wizards.Assistants
 {
     public class MavenWizard
     {

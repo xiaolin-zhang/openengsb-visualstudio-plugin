@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Assistants.Common;
+using Org.OpenEngSb.VisualStudio.Plugins.Wizards.Common;
 using System.IO;
 
-namespace Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Assistants.Service.Communication
+namespace Org.OpenEngSb.VisualStudio.Plugins.Wizards.Service.Communication
 {
     public class LocalRepositoryClient : IRepositoryClient
     {

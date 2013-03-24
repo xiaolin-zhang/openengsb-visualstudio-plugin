@@ -6,7 +6,7 @@ using System.IO;
 using VSLangProj;
 using System.Xml.Serialization;
 
-namespace Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Assistants.Common
+namespace Org.OpenEngSb.VisualStudio.Plugins.Wizards.Common
 {
     public class WizardConfiguration
     {

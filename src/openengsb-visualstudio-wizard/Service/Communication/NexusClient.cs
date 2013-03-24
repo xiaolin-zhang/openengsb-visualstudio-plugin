@@ -7,10 +7,10 @@ using System.Xml.Serialization;
 using System.Xml;
 using System.IO;
 
-using Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Assistants.Common;
-using Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Assistants.Service.Communication.XML.Nexus;
+using Org.OpenEngSb.VisualStudio.Plugins.Wizards.Common;
+using Org.OpenEngSb.VisualStudio.Plugins.Wizards.Service.Communication.XML.Nexus;
 
-namespace Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Assistants.Service.Communication
+namespace Org.OpenEngSb.VisualStudio.Plugins.Wizards.Service.Communication
 {
     public class NexusClient : IRepositoryClient
     {

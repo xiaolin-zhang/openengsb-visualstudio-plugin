@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Xml.Serialization;
 
-namespace Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Assistants.Service.Communication.XML.Nexus
+namespace Org.OpenEngSb.VisualStudio.Plugins.Wizards.Service.Communication.XML.Nexus
 {
     [Serializable]
     [XmlType("artifactHit")]

@@ -4,42 +4,42 @@
         <name>openengsb-visualstudio-addin</name>
     </assembly>
     <members>
-        <member name="T:Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Maven.Connect">
+        <member name="T:Org.OpenEngSb.VisualStudio.Plugins.Wizards.Addin.Connect">
             <summary>The object for implementing an Add-in.</summary>
             <seealso class='IDTExtensibility2' />
         </member>
-        <member name="M:Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Maven.Connect.#ctor">
+        <member name="M:Org.OpenEngSb.VisualStudio.Plugins.Wizards.Addin.Connect.#ctor">
             <summary>Implements the constructor for the Add-in object. Place your initialization code within this method.</summary>
         </member>
-        <member name="M:Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Maven.Connect.OnConnection(System.Object,Extensibility.ext_ConnectMode,System.Object,System.Array@)">
+        <member name="M:Org.OpenEngSb.VisualStudio.Plugins.Wizards.Addin.Connect.OnConnection(System.Object,Extensibility.ext_ConnectMode,System.Object,System.Array@)">
             <summary>Implements the OnConnection method of the IDTExtensibility2 interface. Receives notification that the Add-in is being loaded.</summary>
             <param term='application'>Root object of the host application.</param>
             <param term='connectMode'>Describes how the Add-in is being loaded.</param>
             <param term='addInInst'>Object representing this Add-in.</param>
             <seealso class='IDTExtensibility2' />
         </member>
-        <member name="M:Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Maven.Connect.OnDisconnection(Extensibility.ext_DisconnectMode,System.Array@)">
+        <member name="M:Org.OpenEngSb.VisualStudio.Plugins.Wizards.Addin.Connect.OnDisconnection(Extensibility.ext_DisconnectMode,System.Array@)">
             <summary>Implements the OnDisconnection method of the IDTExtensibility2 interface. Receives notification that the Add-in is being unloaded.</summary>
             <param term='disconnectMode'>Describes how the Add-in is being unloaded.</param>
             <param term='custom'>Array of parameters that are host application specific.</param>
             <seealso class='IDTExtensibility2' />
         </member>
-        <member name="M:Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Maven.Connect.OnAddInsUpdate(System.Array@)">
+        <member name="M:Org.OpenEngSb.VisualStudio.Plugins.Wizards.Addin.Connect.OnAddInsUpdate(System.Array@)">
             <summary>Implements the OnAddInsUpdate method of the IDTExtensibility2 interface. Receives notification when the collection of Add-ins has changed.</summary>
             <param term='custom'>Array of parameters that are host application specific.</param>
             <seealso class='IDTExtensibility2' />		
         </member>
-        <member name="M:Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Maven.Connect.OnStartupComplete(System.Array@)">
+        <member name="M:Org.OpenEngSb.VisualStudio.Plugins.Wizards.Addin.Connect.OnStartupComplete(System.Array@)">
             <summary>Implements the OnStartupComplete method of the IDTExtensibility2 interface. Receives notification that the host application has completed loading.</summary>
             <param term='custom'>Array of parameters that are host application specific.</param>
             <seealso class='IDTExtensibility2' />
         </member>
-        <member name="M:Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Maven.Connect.OnBeginShutdown(System.Array@)">
+        <member name="M:Org.OpenEngSb.VisualStudio.Plugins.Wizards.Addin.Connect.OnBeginShutdown(System.Array@)">
             <summary>Implements the OnBeginShutdown method of the IDTExtensibility2 interface. Receives notification that the host application is being unloaded.</summary>
             <param term='custom'>Array of parameters that are host application specific.</param>
             <seealso class='IDTExtensibility2' />
         </member>
-        <member name="M:Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Maven.Connect.QueryStatus(System.String,EnvDTE.vsCommandStatusTextWanted,EnvDTE.vsCommandStatus@,System.Object@)">
+        <member name="M:Org.OpenEngSb.VisualStudio.Plugins.Wizards.Addin.Connect.QueryStatus(System.String,EnvDTE.vsCommandStatusTextWanted,EnvDTE.vsCommandStatus@,System.Object@)">
             <summary>Implements the QueryStatus method of the IDTCommandTarget interface. This is called when the command's availability is updated</summary>
             <param term='commandName'>The name of the command to determine state for.</param>
             <param term='neededText'>Text that is needed for the command.</param>
@@ -47,7 +47,7 @@
             <param term='commandText'>Text requested by the neededText parameter.</param>
             <seealso class='Exec' />
         </member>
-        <member name="M:Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Maven.Connect.Exec(System.String,EnvDTE.vsCommandExecOption,System.Object@,System.Object@,System.Boolean@)">
+        <member name="M:Org.OpenEngSb.VisualStudio.Plugins.Wizards.Addin.Connect.Exec(System.String,EnvDTE.vsCommandExecOption,System.Object@,System.Object@,System.Boolean@)">
             <summary>Implements the Exec method of the IDTCommandTarget interface. This is called when the command is invoked.</summary>
             <param term='commandName'>The name of the command to execute.</param>
             <param term='executeOption'>Describes how the command should be run.</param>
@@ -56,37 +56,37 @@
             <param term='handled'>Informs the caller if the command was handled or not.</param>
             <seealso class='Exec' />
         </member>
-        <member name="M:Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Maven.Connect.OnDownloadArtifactsClick(Microsoft.VisualStudio.CommandBars.CommandBarButton,System.Boolean@)">
+        <member name="M:Org.OpenEngSb.VisualStudio.Plugins.Wizards.Addin.Connect.OnDownloadArtifactsClick(Microsoft.VisualStudio.CommandBars.CommandBarButton,System.Boolean@)">
             <summary>
             The event handler associated with the sub menu item.
             event handler for Click event.
             </summary>
         </member>
-        <member name="M:Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Maven.Connect.OnDownloadBridgeClick(Microsoft.VisualStudio.CommandBars.CommandBarButton,System.Boolean@)">
+        <member name="M:Org.OpenEngSb.VisualStudio.Plugins.Wizards.Addin.Connect.OnDownloadBridgeClick(Microsoft.VisualStudio.CommandBars.CommandBarButton,System.Boolean@)">
             <summary>
             The event handler associated with the sub menu item.
             event handler for Click event.
             </summary>
         </member>
-        <member name="M:Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Maven.Connect.OnIncludeBridgeClick(Microsoft.VisualStudio.CommandBars.CommandBarButton,System.Boolean@)">
+        <member name="M:Org.OpenEngSb.VisualStudio.Plugins.Wizards.Addin.Connect.OnIncludeBridgeClick(Microsoft.VisualStudio.CommandBars.CommandBarButton,System.Boolean@)">
             <summary>
             The event handler associated with the sub menu item.
             event handler for Click event.
             </summary>
         </member>
-        <member name="M:Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Maven.Connect.OnBusClick(Microsoft.VisualStudio.CommandBars.CommandBarButton,System.Boolean@)">
+        <member name="M:Org.OpenEngSb.VisualStudio.Plugins.Wizards.Addin.Connect.OnBusClick(Microsoft.VisualStudio.CommandBars.CommandBarButton,System.Boolean@)">
             <summary>
             The event handler associated with the sub menu item.
             event handler for Click event.
             </summary>
         </member>
-        <member name="M:Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Maven.Connect.OnOpenBusClick(Microsoft.VisualStudio.CommandBars.CommandBarButton,System.Boolean@)">
+        <member name="M:Org.OpenEngSb.VisualStudio.Plugins.Wizards.Addin.Connect.OnOpenBusClick(Microsoft.VisualStudio.CommandBars.CommandBarButton,System.Boolean@)">
             <summary>
             The event handler associated with the sub menu item.
             event handler for Click event.
             </summary>
         </member>
-        <member name="M:Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Maven.Connect.OnConfigureClick(Microsoft.VisualStudio.CommandBars.CommandBarButton,System.Boolean@)">
+        <member name="M:Org.OpenEngSb.VisualStudio.Plugins.Wizards.Addin.Connect.OnConfigureClick(Microsoft.VisualStudio.CommandBars.CommandBarButton,System.Boolean@)">
             <summary>
             The event handler associated with the sub menu item.
             event handler for Click event.

@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Windows;
-using Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Assistants.Service;
-using Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Assistants.Common;
+using Org.OpenEngSb.VisualStudio.Plugins.Wizards.Service;
+using Org.OpenEngSb.VisualStudio.Plugins.Wizards.Common;
 
-namespace Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Assistants.UI
+namespace Org.OpenEngSb.VisualStudio.Plugins.Wizards.UI
 {
     class UIArtifactService
     {

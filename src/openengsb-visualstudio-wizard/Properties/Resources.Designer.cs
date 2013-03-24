@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Assistants.Properties {
+namespace Org.OpenEngSb.VisualStudio.Plugins.Wizards.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Assistants.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Assistants.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Org.OpenEngSb.VisualStudio.Plugins.Wizards.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

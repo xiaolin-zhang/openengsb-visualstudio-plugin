@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Assistants.Common;
-using Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Assistants.Testing;
-using Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Assistants.Service.Communication;
+using Org.OpenEngSb.VisualStudio.Plugins.Wizards.Common;
+using Org.OpenEngSb.VisualStudio.Plugins.Wizards.Testing;
+using Org.OpenEngSb.VisualStudio.Plugins.Wizards.Service.Communication;
 
-namespace Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Assistants.Service
+namespace Org.OpenEngSb.VisualStudio.Plugins.Wizards.Service
 {
     public class RepositoryService
     {

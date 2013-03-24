@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Net;
 using System.Web.Script.Serialization;
-using Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Assistants.Common;
-using Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Assistants.Service.Communication.JSON.MavenCentral;
+using Org.OpenEngSb.VisualStudio.Plugins.Wizards.Common;
+using Org.OpenEngSb.VisualStudio.Plugins.Wizards.Service.Communication.JSON.MavenCentral;
 
-namespace Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Assistants.Service.Communication
+namespace Org.OpenEngSb.VisualStudio.Plugins.Wizards.Service.Communication
 {
     class MavenCentralClient : IRepositoryClient
     {

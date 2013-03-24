@@ -6,9 +6,9 @@ using System.IO;
 using System.Net;
 using System.ComponentModel;
 using System.Threading;
-using Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Assistants.Common;
+using Org.OpenEngSb.VisualStudio.Plugins.Wizards.Common;
 
-namespace Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Assistants.Service
+namespace Org.OpenEngSb.VisualStudio.Plugins.Wizards.Service
 {
     public class FileService
     {

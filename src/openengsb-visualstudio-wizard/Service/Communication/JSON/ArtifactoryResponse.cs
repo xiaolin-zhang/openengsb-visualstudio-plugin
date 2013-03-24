@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Assistants.Service.Communication.JSON
+namespace Org.OpenEngSb.VisualStudio.Plugins.Wizards.Service.Communication.JSON
 {
     public class ArtifactoryResponse
     {

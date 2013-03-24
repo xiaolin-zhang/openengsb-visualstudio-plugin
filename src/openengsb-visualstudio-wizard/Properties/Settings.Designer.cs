@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Assistants.Properties {
+namespace Org.OpenEngSb.VisualStudio.Plugins.Wizards.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

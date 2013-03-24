@@ -6,7 +6,7 @@ using System.Windows.Forms;
 using System.Windows;
 using System.Windows.Media;
 
-namespace Org.OpenEngSB.Loom.Csharp.VisualStudio.Plugins.Assistants.UI
+namespace Org.OpenEngSb.VisualStudio.Plugins.Wizards.UI
 {
     class Commons
     {
