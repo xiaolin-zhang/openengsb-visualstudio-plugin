@@ -123,13 +123,13 @@
     <Content Include="openengsb.ico" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Resources.resx" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\openengsb-visualstudio-wizard\openengsb-visualstudio-wizard.csproj">
       <Project>{7C6C41A6-2EC8-498B-B3C1-8D48B616F864}</Project>
       <Name>openengsb-visualstudio-wizard</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Resources.resx" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSHARP.Targets" />
   <PropertyGroup>

@@ -56,41 +56,5 @@
             <param term='handled'>Informs the caller if the command was handled or not.</param>
             <seealso class='Exec' />
         </member>
-        <member name="M:Org.OpenEngSb.VisualStudio.Plugins.Wizards.Addin.Connect.OnDownloadArtifactsClick(Microsoft.VisualStudio.CommandBars.CommandBarButton,System.Boolean@)">
-            <summary>
-            The event handler associated with the sub menu item.
-            event handler for Click event.
-            </summary>
-        </member>
-        <member name="M:Org.OpenEngSb.VisualStudio.Plugins.Wizards.Addin.Connect.OnDownloadBridgeClick(Microsoft.VisualStudio.CommandBars.CommandBarButton,System.Boolean@)">
-            <summary>
-            The event handler associated with the sub menu item.
-            event handler for Click event.
-            </summary>
-        </member>
-        <member name="M:Org.OpenEngSb.VisualStudio.Plugins.Wizards.Addin.Connect.OnIncludeBridgeClick(Microsoft.VisualStudio.CommandBars.CommandBarButton,System.Boolean@)">
-            <summary>
-            The event handler associated with the sub menu item.
-            event handler for Click event.
-            </summary>
-        </member>
-        <member name="M:Org.OpenEngSb.VisualStudio.Plugins.Wizards.Addin.Connect.OnBusClick(Microsoft.VisualStudio.CommandBars.CommandBarButton,System.Boolean@)">
-            <summary>
-            The event handler associated with the sub menu item.
-            event handler for Click event.
-            </summary>
-        </member>
-        <member name="M:Org.OpenEngSb.VisualStudio.Plugins.Wizards.Addin.Connect.OnOpenBusClick(Microsoft.VisualStudio.CommandBars.CommandBarButton,System.Boolean@)">
-            <summary>
-            The event handler associated with the sub menu item.
-            event handler for Click event.
-            </summary>
-        </member>
-        <member name="M:Org.OpenEngSb.VisualStudio.Plugins.Wizards.Addin.Connect.OnConfigureClick(Microsoft.VisualStudio.CommandBars.CommandBarButton,System.Boolean@)">
-            <summary>
-            The event handler associated with the sub menu item.
-            event handler for Click event.
-            </summary>
-        </member>
     </members>
 </doc>
