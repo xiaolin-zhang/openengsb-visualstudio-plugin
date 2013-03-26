@@ -13,14 +13,13 @@ namespace Org.OpenEngSb.VisualStudio.Plugins.Wizards.Common
         public string CscExePath { get; set; }
         public string WsdlExePath { get; set; }
         public string SvcutilsExePath { get; set; }
-
         public bool UseSvcutils { get; set; }
-
-        public string ArtifactFolder { get; set; }
 
         public string SolutionName { get; set; }
         public string ProjectName { get; set; }
         public string SolutionDirectory { get; set; }
+
+        public string ArtifactFolder { get; set; }
 
         public Repository BridgeRepo { get; set; }
         public string BridgeUrl { get; set; }
@@ -34,7 +33,11 @@ namespace Org.OpenEngSb.VisualStudio.Plugins.Wizards.Common
 
         public WizardConfiguration()
         {
-            ArtifactFolder = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            ArtifactFolder = Path.Combine(
+                Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), 
+                Wizard.BASE_FOLDER, 
+                Wizard.CACHE_FOLDER);
+
             Repositories = new List<Repository>();
             CscExePath = "";
             WsdlExePath = "";

@@ -168,7 +168,10 @@ namespace Org.OpenEngSb.VisualStudio.Plugins.Wizards.UI
                 return;
 
             IList<Item> items = _wizard.Items;
-            if (items.First() == null)
+            if (items == null)
+                return;
+
+            if (items.Count <= 0)
                 return;
 
             Item item = items.First();

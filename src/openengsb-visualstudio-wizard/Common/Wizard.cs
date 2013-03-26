@@ -14,6 +14,10 @@ namespace Org.OpenEngSb.VisualStudio.Plugins.Wizards.Common
 {
     public class Wizard
     {
+        public const string BASE_FOLDER = "OpenEngSb";
+        public const string CONF_FOLDER = "conf";
+        public const string CACHE_FOLDER = "cache";
+
         private const double PROGRESS_COMPLETE = 1.0;
 
         public WizardConfiguration Configuration { get; set; }
@@ -36,6 +40,11 @@ namespace Org.OpenEngSb.VisualStudio.Plugins.Wizards.Common
 
         private bool _singleFileDownload;
         private bool _canceled;
+
+        private string _configFilePath;
+
+        private RepositoryService _repository;
+
         public Wizard(DTE2 visualStudio, VSProject project)
         {
             WizardSteps = new List<IWizardStep>();
@@ -48,15 +57,17 @@ namespace Org.OpenEngSb.VisualStudio.Plugins.Wizards.Common
             Configuration = loadConfiguration(project.Project.UniqueName);
             _singleFileDownload = false;
             _canceled = false;
-        }
 
-        private string getConfigFilePath()
-        {
-            string path = Path.Combine(
-                Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments),
-                "OpenEngSb");
-            Directory.CreateDirectory(path);
-            return Path.Combine(path, _activeProject.Project.UniqueName + ".wizard.conf");
+            string userHome = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            string configFolder = Path.Combine(userHome, BASE_FOLDER, CONF_FOLDER);
+            Directory.CreateDirectory(configFolder);
+            _configFilePath = Path.Combine(configFolder, _activeProject.Project.UniqueName + ".wizard.conf");
+
+            string cachePath = Path.Combine(userHome, BASE_FOLDER, CACHE_FOLDER);
+            Directory.CreateDirectory(cachePath);
+
+            Repository artifactCache = new Repository(cachePath, "", "", Repository.Type.Local, null);
+            _repository = new RepositoryService(artifactCache, null);
         }
 
         public void DoWizard()
@@ -95,14 +106,22 @@ namespace Org.OpenEngSb.VisualStudio.Plugins.Wizards.Common
 
         public void DownloadItems()
         {
+            IList<Item> itemsToDownload = new List<Item>();
+            foreach (Item i in Items)
+            {
+                i.Path = _fileService.CreatePath(Configuration.ArtifactFolder, i.Name);
+                if (!File.Exists(i.Path))
+                {
+                    itemsToDownload.Add(i);
+                }
+            }
+            
+            Items = itemsToDownload;
+
             if (Items.Count <= 0)
             {
                 ProgressChanged(PROGRESS_COMPLETE);
                 return;
-            }
-            foreach (Item i in Items)
-            {
-                i.Path = _fileService.CreatePath(Configuration.ArtifactFolder, i.Name);
             }
 
             _singleFileDownload = false;
@@ -208,24 +227,21 @@ namespace Org.OpenEngSb.VisualStudio.Plugins.Wizards.Common
             }
         }
 
-
         public void SaveConfiguration()
         {
             XmlSerializer serializer = new XmlSerializer(typeof(WizardConfiguration));
-            string path = getConfigFilePath();
-            Directory.CreateDirectory(Path.GetDirectoryName(path));
-            FileStream fs = File.Open(path, FileMode.Create);
+            Directory.CreateDirectory(Path.GetDirectoryName(_configFilePath));
+            FileStream fs = File.Open(_configFilePath, FileMode.Create);
             serializer.Serialize(fs, Configuration);
             fs.Close();
         }
 
         private WizardConfiguration loadConfiguration(string projectName)
         {
-            string configFile = getConfigFilePath();
-            if (File.Exists(configFile))
+            if (File.Exists(_configFilePath))
             {
                 XmlSerializer serizalier = new XmlSerializer(typeof(WizardConfiguration));
-                FileStream fs = File.OpenRead(configFile);
+                FileStream fs = File.OpenRead(_configFilePath);
                 return (WizardConfiguration)serizalier.Deserialize(fs);
             }
             else
@@ -287,8 +303,6 @@ namespace Org.OpenEngSb.VisualStudio.Plugins.Wizards.Common
                 }
             }
         }
-
-
 
         public void DownloadOpenEngSb(bool overwrite)
         {

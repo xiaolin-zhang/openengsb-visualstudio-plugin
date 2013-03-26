@@ -15,11 +15,11 @@ using System.Threading;
 
 namespace Org.OpenEngSb.VisualStudio.Plugins.Wizards.Assistants
 {
-    public class MavenWizard
+    public class OpenEngSbWizard
     {
         private Wizard _wizard;
 
-        public MavenWizard(DTE2 visualStudio, VSProject project)
+        public OpenEngSbWizard(DTE2 visualStudio, VSProject project)
         {
             _wizard = new Wizard(visualStudio, project);
         }

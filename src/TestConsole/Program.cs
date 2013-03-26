@@ -24,10 +24,10 @@ namespace TestConsole
             var project = new Mock<Project>();
             project.Setup(proj => proj.UniqueName).Returns("OpenEngSbMockProject");
             vsproject.Setup(proj => proj.Project).Returns(project.Object);
-            MavenWizard wizard = new MavenWizard(env.Object, vsproject.Object);
+            OpenEngSbWizard wizard = new OpenEngSbWizard(env.Object, vsproject.Object);
             wizard.DoConfiguration();
             //wizard.DoSteps();
-            wizard.DownloadOpenEngSb();
+            //wizard.DownloadOpenEngSb();
             //wizard.DoBus();
             //wizard.DownloadBridge(true);
             //wizard.IncludeBridge();

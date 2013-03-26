@@ -94,7 +94,7 @@
     <Compile Include="Common\IWizardStep.cs" />
     <Compile Include="Common\Repository.cs" />
     <Compile Include="Common\Wizard.cs" />
-    <Compile Include="MavenWizard.cs" />
+    <Compile Include="OpenEngSbWizard.cs" />
     <Compile Include="Service\ArchiveService.cs" />
     <Compile Include="Service\Communication\ArtifactoryClient.cs" />
     <Compile Include="Service\Communication\IRepositoryClient.cs" />
