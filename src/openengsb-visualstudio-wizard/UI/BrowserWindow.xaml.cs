@@ -70,11 +70,35 @@ namespace Org.OpenEngSb.VisualStudio.Plugins.Wizards.UI
                             if (i.IsChecked)
                             {
                                 _wizard.Items.Add(i.ItemModel);
+                                UIItem domainEvents = findEventItem(v.Items, i);
+                                if (domainEvents == null)
+                                    continue;
+                                if (domainEvents.IsChecked)
+                                    continue;
+
+                                _wizard.Items.Add(domainEvents.ItemModel);
                             }
                         }
                     }
                 }
             }
+        }
+
+        private UIItem findEventItem(IList<UIItem> items, UIItem maybeDomain)
+        {
+            if (maybeDomain.ItemModel.Name.EndsWith("DomainEvents.wsdl"))
+                return null;
+
+            string domainEventName = maybeDomain.ItemModel.Name.Replace("Domain.wsdl", "DomainEvents.wsdl");
+
+            foreach(UIItem i in items) 
+            {
+                if (i.ItemModel.Name == domainEventName)
+                {
+                    return i;
+                }
+            }
+            return null;
         }
 
         private void button_browse_Click(object sender, RoutedEventArgs e)

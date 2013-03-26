@@ -127,9 +127,6 @@
     <Compile Include="UI\ConfigurationWindow.xaml.cs">
       <DependentUpon>ConfigurationWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UI\CreateProjectWindow.xaml.cs">
-      <DependentUpon>CreateProjectWindow.xaml</DependentUpon>
-    </Compile>
     <Compile Include="UI\DownloadWindow.xaml.cs">
       <DependentUpon>DownloadWindow.xaml</DependentUpon>
     </Compile>
@@ -162,10 +159,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="UI\ConfigurationWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="UI\CreateProjectWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

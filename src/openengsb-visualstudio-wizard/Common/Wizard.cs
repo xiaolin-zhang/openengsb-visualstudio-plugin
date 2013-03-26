@@ -43,8 +43,6 @@ namespace Org.OpenEngSb.VisualStudio.Plugins.Wizards.Common
 
         private string _configFilePath;
 
-        private RepositoryService _repository;
-
         public Wizard(DTE2 visualStudio, VSProject project)
         {
             WizardSteps = new List<IWizardStep>();
@@ -65,9 +63,6 @@ namespace Org.OpenEngSb.VisualStudio.Plugins.Wizards.Common
 
             string cachePath = Path.Combine(userHome, BASE_FOLDER, CACHE_FOLDER);
             Directory.CreateDirectory(cachePath);
-
-            Repository artifactCache = new Repository(cachePath, "", "", Repository.Type.Local, null);
-            _repository = new RepositoryService(artifactCache, null);
         }
 
         public void DoWizard()
@@ -106,17 +101,10 @@ namespace Org.OpenEngSb.VisualStudio.Plugins.Wizards.Common
 
         public void DownloadItems()
         {
-            IList<Item> itemsToDownload = new List<Item>();
             foreach (Item i in Items)
             {
                 i.Path = _fileService.CreatePath(Configuration.ArtifactFolder, i.Name);
-                if (!File.Exists(i.Path))
-                {
-                    itemsToDownload.Add(i);
-                }
             }
-            
-            Items = itemsToDownload;
 
             if (Items.Count <= 0)
             {
